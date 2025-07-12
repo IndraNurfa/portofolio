@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tailwind -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font -->
     <link rel="stylesheet" href="styles/font.css">
@@ -15,8 +15,8 @@
     <script src="https://kit.fontawesome.com/65199da800.js" crossorigin="anonymous"></script>
 
     <!-- Metatags -->
-    <title>Milestone 1 - Ahmad Indra Nurfauzi</title>
-    <meta name="title" content="Milestone 1 - Ahmad Indra Nurfauzi" />
+    <title>Ahmad Indra Nurfauzi - Full-Stack Engineer</title>
+    <meta name="title" content="Ahmad Indra Nurfauzi - Full-Stack Engineer" />
     <meta name="description"
         content="Full-Stack Engineer with expertise in Java, JavaScript, TypeScript, and Golang. Passionate about building scalable web applications and optimizing system performance." />
 
@@ -26,7 +26,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/" />
-    <meta property="og:title" content="Milestone 1 - Ahmad Indra Nurfauzi" />
+    <meta property="og:title" content="Ahmad Indra Nurfauzi - Full-Stack Engineer" />
     <meta property="og:description"
         content="Full-Stack Engineer with expertise in Java, JavaScript, TypeScript, and Golang. Passionate about building scalable web applications and optimizing system performance." />
     <meta property="og:image"
@@ -35,7 +35,7 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/" />
-    <meta property="twitter:title" content="Milestone 1 - Ahmad Indra Nurfauzi" />
+    <meta property="twitter:title" content="Ahmad Indra Nurfauzi - Full-Stack Engineer" />
     <meta property="twitter:description"
         content="Full-Stack Engineer with expertise in Java, JavaScript, TypeScript, and Golang. Passionate about building scalable web applications and optimizing system performance." />
     <meta property="twitter:image"
@@ -59,52 +59,100 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <style>
+        :root {
+            --bg-dominant: #effefb;
+            --bg-secondary: #c2f2f2;
+            --accent-dark: #356267;
+            --accent-light: #41737c;
+        }
+
+        body {
+            background-color: var(--bg-dominant);
+            color: var(--accent-dark);
+        }
+
+        .navbar,
+        .footer {
+            background-color: var(--accent-dark);
+        }
+
+        .text-accent-light {
+            color: var(--accent-light);
+        }
+        .border-accent-light {
+            border-color: var(--accent-light);
+        }
+
+        .bg-secondary {
+            background-color: var(--bg-secondary);
+        }
+        .border-accent-dark {
+            border-color: var(--accent-dark);
+        }
+        .hover\:border-accent-light:hover {
+            border-color: var(--accent-light);
+        }
+        .form-input {
+            background-color: #fff;
+            border: 2px solid var(--accent-light);
+            transition: all 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent-dark);
+            box-shadow: 0 0 0 3px rgba(65, 115, 124, 0.3);
+        }
+        .btn-submit {
+             background-color: var(--accent-light);
+             transition: background-color 0.3s;
+        }
+         .btn-submit:hover {
+             background-color: var(--accent-dark);
+         }
+    </style>
 </head>
 
-<body class="bg-[#E5E1DA]">
-    <header>
-        <nav>
-            <ul
-                class="bg-[#89A8B2] w-full border-b border-b-black p-[8px] font-bold flex items-center justify-evenly text-base md:text-lg lg:text-xl text-white">
-                <li
-                    class="relative my-4 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">
-                    <a href="#home">Home</a>
+<body>
+    <header class="navbar shadow-lg sticky top-0 z-50 border-b-4 border-accent-light">
+        <nav class="container mx-auto px-6 py-4">
+            <ul class="flex items-center justify-evenly text-lg lg:text-xl text-white font-semibold">
+                <li>
+                    <a href="#home" class="relative py-2 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">Home</a>
                 </li>
-                <li
-                    class="relative my-4 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">
-                    <a href="#about-me">About Me</a>
+                <li>
+                    <a href="#about-me" class="relative py-2 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">About Me</a>
                 </li>
-                <li
-                    class="relative my-4 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">
-                    <a href="#my-project">Project</a>
+                <li>
+                    <a href="#my-project" class="relative py-2 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">Project</a>
                 </li>
-                <li
-                    class="relative my-4 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">
-                    <a href="#contact-me">Contact Me</a>
+                <li>
+                    <a href="#contact-me" class="relative py-2 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">Contact Me</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="container mx-auto mt-[21px]">
-        <section id="home" class="flex flex-col md:flex-row items-center p-5 gap-8 mx-[34px] lg:mx-[89px]">
-            <div class="flex-1">
-                <h1 class="font-bold text-xl md:text-2xl lg:text-4xl text-gray-800 text-center md:text-left antialiased">
+    <main class="container mx-auto mt-20 mb-24">
+        <section id="home" class="flex flex-col md:flex-row items-center p-5 gap-12 mx-auto max-w-6xl">
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl antialiased">
                     AHMAD INDRA NURFAUZI</h1>
-                <p class="font-semibold text-base md:text-lg lg:text-xl text-gray-600 mt-2 text-center md:text-left antialiased">
+                <p class="font-semibold text-2xl md:text-3xl text-accent-light mt-4 antialiased">
                     Full-Stack Engineer | Problem Solver | System Optimizer
                 </p>
             </div>
             <div
-                class="overflow-hidden block rounded-[21px] border-[2px] ease-in hover:shadow-2xl hover:border-[#FF8A8A] ">
+                class="overflow-hidden rounded-full border-4 border-accent-dark shadow-lg hover:shadow-2xl hover:border-accent-light transition-all duration-300">
                 <img src="assets/profile-picture/hanni.png" alt="profile picture"
-                    class="w-48 md:w-64 transition ease-in duration-300 hover:scale-110 hover:shadow-lg dark:hover:shadow-black/30">
+                    class="w-48 md:w-64 transition-transform duration-300 hover:scale-110">
             </div>
         </section>
 
-        <section id="about-me" class="p-3">
-            <div class="w-auto mx-auto">
-                <p class="font-medium text-center md:text-left tracking-wide leading-relaxed">
+        <section id="about-me" class="p-8 mt-20 max-w-5xl mx-auto">
+            <div class="text-center">
+                <p class="font-medium text-lg leading-relaxed">
                     I am a Full-Stack Engineer with expertise in application development, programming, and technical
                     support.
                     Experienced in Java, JavaScript, TypeScript, Golang, and databases like MySQL, PostgreSQL, and
@@ -114,143 +162,142 @@
                     performance.
                 </p>
 
-                <div class="flex flex-col md:flex-row gap-5 mt-5 items-center md:justify-center lg:justify-start">
+                <div class="flex justify-center gap-12 mt-10">
                     <a href="https://www.linkedin.com/in/ahmad-indra-nurfauzi/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="assets/logo/linkedIn.png" alt="LinkedIn"
-                            class="py-auto h-auto w-[89px] md:w-[144px] lg:w-[233px] hover:scale-110 transition-transform duration-300">
+                        rel="noopener noreferrer" class="text-accent-light hover:text-accent-dark transition-colors duration-300">
+                        <i class="fab fa-linkedin fa-3x"></i>
                     </a>
-                    <a href="https://github.com/IndraNurfa" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/logo/github.png" alt="GitHub"
-                            class="py-auto h-auto w-[89px] md:w-[144px] lg:w-[233px] hover:scale-110 transition-transform duration-300">
+                    <a href="https://github.com/IndraNurfa" target="_blank" rel="noopener noreferrer" class="text-accent-light hover:text-accent-dark transition-colors duration-300">
+                        <i class="fab fa-github fa-3x"></i>
+                    </a>
+                     <a href="mailto:ahmadindran@gmail.com" class="text-accent-light hover:text-accent-dark transition-colors duration-300">
+                        <i class="fas fa-envelope fa-3x"></i>
                     </a>
                 </div>
-
             </div>
         </section>
-        <hr class="h-px my-[21px] bg-gray-200 border-2 dark:bg-gray-700">
+        <hr class="h-px my-20 bg-gray-300 border-0 max-w-4xl mx-auto">
 
-        <section id="experience" class="p-8">
-            <h2 class="text-2xl font-bold text-gray-800 mb-5 ml-5">Experience</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-xl font-semibold">Technical Support Engineer - Moladin</h3>
-                    <p class="font-normal text-gray-500 mt-1">May 2024 - Present</p>
-                    <ul class="list-disc list-inside mt-2 pl-3 text-gray-700 font-medium text-justify">
+        <section id="experience" class="p-8 max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Experience</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold">Technical Support Engineer - Moladin</h3>
+                    <p class="font-normal text-accent-light mt-2">May 2024 - Present</p>
+                    <ul class="list-disc list-inside mt-4 pl-4 space-y-2 font-medium">
                         <li>Troubleshoot and diagnose technical issues faced by agents and dealers.</li>
                         <li>Provide technical solutions ensuring smooth system operations.</li>
                         <li>Deliver timely and effective resolutions to tech-related problems.</li>
                     </ul>
                 </div>
 
-                <div>
-                    <h3 class="text-xl font-semibold">FullStack Engineer - GoTo Impact</h3>
-                    <p class="font-normal text-gray-500 mt-1">June 2023 - Dec 2023</p>
-                    <ul class="list-disc list-inside mt-2 pl-3 text-gray-700 font-medium text-justify">
+                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold">FullStack Engineer - GoTo Impact</h3>
+                    <p class="font-normal text-accent-light mt-2">June 2023 - Dec 2023</p>
+                    <ul class="list-disc list-inside mt-4 pl-4 space-y-2 font-medium">
                         <li>Developed high-performance web applications using MERN stack.</li>
                         <li>Built a real-time disaster information app with backend integration.</li>
                         <li>Maintained documentation to ensure workflow clarity.</li>
                     </ul>
                 </div>
-            </div>
-        </section>
-        <hr class="h-px my-[21px] bg-gray-200 border-2 dark:bg-gray-700">
 
-        <section id="my-project" class="p-8">
-            <h2 class="text-2xl font-bold text-gray-800 mb-5 ml-5 md:text-center">PROJECT</h2>
-
-            <div
-                class="flex flex-col md:flex-row items-center gap-8 bg-[#F1F0E8] shadow-lg rounded-lg overflow-hidden p-8">
-                <div class="w-full md:w-1/2">
-                    <img src="assets/project/infobencana.png" alt="InfoBencana"
-                        class="w-full h-auto object-cover rounded-lg border-[1px] border-gray-500 shadow-md ease-in duration-300 hover:shadow-lg">
-                </div>
-
-                <div class="w-full md:w-1/2 px-[34px]">
-                    <h3
-                        class="text-xl ml-[34px] font-semibold text-gray-800 hover:text-blue-500 flex items-center gap-3">
-                        <a href="https://infobencana.netlify.app/" target="_blank">InfoBencana</a>
-                        <img src="assets/logo/mern.png" alt="mern-stack" class="w-[89px] h-[34px] ml-[21px]">
-                    </h3>
-
-                    <div class="text-ellipsis" id="description">
-                        <p class="text-gray-600 mt-3 px-3 text-sm font-normal leading-relaxed indent-5 break-words">
-                            InfoBencana is a platform aimed at providing accurate, timely, and integrated natural
-                            disaster
-                            information. This platform serves as a solution to the issues often faced by the Indonesian
-                            public,
-                            such as the lack of access to accurate and timely information during disasters. Infobencana
-                            addresses this problem by efficiently integrating, processing, and disseminating relevant
-                            and
-                            credible natural disaster data. Our goal is to ensure that the public always receives the
-                            latest
-                            information they need at the right time.
-                        </p>
-                    </div>
-                    <div class="mt-5 ml-[21px]">
-                        <a href="https://github.com/infobencana" target="_blank"
-                            class="text-gray-800 hover:text-blue-500 flex items-center gap-3 font-medium">
-                            <i class="fa-brands fa-square-github text-2xl"></i> GitHub
-                        </a>
-                    </div>
+                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold">Software Engineer Intern - Tech Startup</h3>
+                    <p class="font-normal text-accent-light mt-2">Jan 2023 - May 2023</p>
+                    <ul class="list-disc list-inside mt-4 pl-4 space-y-2 font-medium">
+                        <li>Assisted in developing new features for a web application.</li>
+                        <li>Wrote unit tests to ensure code quality and reliability.</li>
+                        <li>Participated in code reviews and agile team meetings.</li>
+                    </ul>
                 </div>
             </div>
         </section>
+        <hr class="h-px my-20 bg-gray-300 border-0 max-w-4xl mx-auto">
 
-        <section id="contact-me" class="p-8 flex justify-center">
-            <div class="w-full max-w-lg bg-[#F1F0E8] shadow-lg rounded-lg border border-gray-300 p-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-5 text-center">Contact Me</h2>
-                <p class="text-center font-medium text-gray-600 mb-8">
-                    I'd love to hear from you! Whether you have a question or just want to connect, feel free to drop me
-                    a message.
+        <section id="my-project" class="p-8 max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Projects</h2>
+             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="assets/project/infobencana.png" alt="InfoBencana" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold">InfoBencana</h3>
+                        <p class="mt-2 text-accent-light">A platform for timely and integrated natural disaster information to address public access issues.</p>
+                        <a href="#" class="inline-block mt-4 text-accent-dark font-semibold hover:underline">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 2 (Mock) -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="assets/project/infobencana.png" alt="Mock Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold">E-commerce Platform</h3>
+                        <p class="mt-2 text-accent-light">A full-featured e-commerce website with a custom CMS, built with Node.js, Express, and React.</p>
+                         <a href="#" class="inline-block mt-4 text-accent-dark font-semibold hover:underline">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 3 (Mock) -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                     <img src="assets/project/infobencana.png" alt="Mock Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold">Personal Blog</h3>
+                        <p class="mt-2 text-accent-light">A personal blog platform with markdown support, built with Next.js and Tailwind CSS.</p>
+                         <a href="#" class="inline-block mt-4 text-accent-dark font-semibold hover:underline">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-me" class="p-8 mt-20 max-w-lg mx-auto">
+            <div class="w-full bg-secondary shadow-lg rounded-lg border-2 border-accent-dark p-8">
+                <h2 class="text-3xl font-bold mb-4 text-center">Contact Me</h2>
+                <p class="text-center font-medium text-accent-light mb-8">
+                    I'd love to hear from you! Feel free to drop me a message.
                 </p>
 
-                <form action="https://formspree.io/f/your_form_id" method="POST" class="space-y-5">
+                <form action="https://formspree.io/f/your_form_id" method="POST" class="space-y-6">
                     <div>
-                        <label for="name" class="block text-gray-700 font-medium">Name</label>
+                        <label for="name" class="block font-semibold mb-2">Name</label>
                         <input type="text" id="name" name="name"
-                            class="w-full px-5 py-3 text-sm font-normal border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            class="w-full px-5 py-3 text-base rounded-lg form-input">
                     </div>
 
                     <div>
-                        <label for="email" class="block text-gray-700 font-medium">Email</label>
+                        <label for="email" class="block font-semibold mb-2">Email</label>
                         <input type="email" id="email" name="email"
-                            class="w-full px-5 py-3 text-sm font-normal border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            class="w-full px-5 py-3 text-base rounded-lg form-input">
                     </div>
 
                     <div>
-                        <label for="message" class="block text-gray-700 font-medium">Message</label>
+                        <label for="message" class="block font-semibold mb-2">Message</label>
                         <textarea id="message" name="message" rows="5"
-                            class="w-full px-5 py-3 text-sm font-normal border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            class="w-full px-5 py-3 text-base rounded-lg form-input"></textarea>
                     </div>
 
                     <button type="submit"
-                        class="w-full bg-[#B3C8CF] text-white font-medium py-3 rounded-lg hover:bg-[#789DBC] transition duration-300">Send
+                        class="w-full text-white font-semibold py-3 rounded-lg shadow-md hover:shadow-lg btn-submit">Send
                         Message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer class="bg-[#89A8B2] text-white py-8">
-        <section
-            class="container mx-auto px-8 grid gap-5 text-center md:text-left md:grid-cols-2 lg:grid-cols-3 items-center">
-
-            <div class="lg:justify-self-center lg:col-span-2">
-                <h2 class="text-lg font-semibold overflow-auto">Ahmad Indra Nurfauzi | Full-Stack Engineer</h2>
-                <p class="text-sm font-extralight mt-1">&copy; <time datetime="2025">2025</time> All rights reserved.
+    <footer class="footer text-white py-10">
+        <section class="container mx-auto px-8 grid gap-6 text-center md:grid-cols-3 items-center">
+            <div class="md:col-span-2 text-center md:text-left">
+                <h2 class="text-lg font-semibold">Ahmad Indra Nurfauzi | Full-Stack Engineer</h2>
+                <p class="text-sm font-light mt-1">&copy; <time datetime="2025">2025</time> All rights reserved.
                 </p>
             </div>
 
-            <nav class="md:justify-self-end">
-                <ul class="flex flex-col space-y-2 md:text-end lg:text-end">
+            <nav class="justify-self-center md:justify-self-end">
+                 <ul class="flex space-x-6 text-lg">
                     <li><a href="https://github.com/IndraNurfa" target="_blank" rel="noopener noreferrer"
-                            class="hover:text-gray-200"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                            class="hover:text-gray-300 transition-colors"><i class="fab fa-github"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/ahmad-indra-nurfauzi/" target="_blank"
-                            rel="noopener noreferrer" class="hover:text-gray-200"><i class="fa-brands fa-linkedin"></i>
-                            LinkedIn</a></li>
-                    <li><a href="mailto:ahmadindran@gmail.com" class="hover:text-gray-200"><i
-                                class="fa-solid fa-envelope"></i> Email</a></li>
+                            rel="noopener noreferrer" class="hover:text-gray-300 transition-colors"><i class="fab fa-linkedin"></i>
+                            </a></li>
+                    <li><a href="mailto:ahmadindran@gmail.com" class="hover:text-gray-300 transition-colors"><i
+                                class="fas fa-envelope"></i></a></li>
                 </ul>
             </nav>
         </section>

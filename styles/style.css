@@ -1,0 +1,50 @@
+:root {
+    --bg-dominant: #effefb;
+    --bg-secondary: #c2f2f2;
+    --accent-dark: #356267;
+    --accent-light: #41737c;
+}
+
+body {
+    background-color: var(--bg-dominant);
+    color: var(--accent-dark);
+}
+
+.navbar,
+.footer {
+    background-color: var(--accent-dark);
+}
+
+.text-accent-light {
+    color: var(--accent-light);
+}
+.border-accent-light {
+    border-color: var(--accent-light);
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary);
+}
+.border-accent-dark {
+    border-color: var(--accent-dark);
+}
+.hover\:border-accent-light:hover {
+    border-color: var(--accent-light);
+}
+.form-input {
+    background-color: #fff;
+    border: 2px solid var(--accent-light);
+    transition: all 0.3s;
+}
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent-dark);
+    box-shadow: 0 0 0 3px rgba(65, 115, 124, 0.3);
+}
+.btn-submit {
+     background-color: var(--accent-light);
+     transition: background-color 0.3s;
+}
+ .btn-submit:hover {
+     background-color: var(--accent-dark);
+ }
