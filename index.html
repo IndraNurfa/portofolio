@@ -1,307 +1,830 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     <!-- Font -->
-    <link rel="stylesheet" href="styles/font.css">
+    <!-- <link rel="stylesheet" href="styles/font.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/65199da800.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/65199da800.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Metatags -->
     <title>Ahmad Indra Nurfauzi - Full-Stack Engineer</title>
     <meta name="title" content="Ahmad Indra Nurfauzi - Full-Stack Engineer" />
-    <meta name="description"
-        content="Full-Stack Engineer with expertise in Java, JavaScript, TypeScript, and Golang. Passionate about building scalable web applications and optimizing system performance." />
+    <meta
+      name="description"
+      content="Full-Stack Engineer with expertise in Java, JavaScript, TypeScript, and Golang. Passionate about building scalable web applications and optimizing system performance."
+    />
 
-    <meta name="keywords"
-        content="ahmad indra nurfauzi, indra nurfa, full-stack developer, frontend engineer, backend engineer, technical support engineer, database, moladin, telkom university, revou, goto impact">
+    <meta
+      name="keywords"
+      content="ahmad indra nurfauzi, indra nurfa, full-stack developer, frontend engineer, backend engineer, technical support engineer, database, moladin, telkom university, revou, goto impact"
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/" />
-    <meta property="og:title" content="Ahmad Indra Nurfauzi - Full-Stack Engineer" />
-    <meta property="og:description"
-        content="Full-Stack Engineer with expertise in Java, JavaScript, TypeScript, and Golang. Passionate about building scalable web applications and optimizing system performance." />
-    <meta property="og:image"
-        content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/assets/logo/revou.png" />
+    <meta
+      property="og:url"
+      content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/"
+    />
+    <meta
+      property="og:title"
+      content="Ahmad Indra Nurfauzi - Full-Stack Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Full-Stack Engineer with expertise in Java, JavaScript, TypeScript, and Golang. Passionate about building scalable web applications and optimizing system performance."
+    />
+    <meta
+      property="og:image"
+      content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/assets/logo/revou.png"
+    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/" />
-    <meta property="twitter:title" content="Ahmad Indra Nurfauzi - Full-Stack Engineer" />
-    <meta property="twitter:description"
-        content="Full-Stack Engineer with expertise in Java, JavaScript, TypeScript, and Golang. Passionate about building scalable web applications and optimizing system performance." />
-    <meta property="twitter:image"
-        content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/assets/logo/revou.png" />
+    <meta
+      property="twitter:url"
+      content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/"
+    />
+    <meta
+      property="twitter:title"
+      content="Ahmad Indra Nurfauzi - Full-Stack Engineer"
+    />
+    <meta
+      property="twitter:description"
+      content="Full-Stack Engineer with expertise in Java, JavaScript, TypeScript, and Golang. Passionate about building scalable web applications and optimizing system performance."
+    />
+    <meta
+      property="twitter:image"
+      content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/assets/logo/revou.png"
+    />
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
     <style>
-        :root {
-            --bg-dominant: #effefb;
-            --bg-secondary: #c2f2f2;
-            --accent-dark: #356267;
-            --accent-light: #41737c;
-        }
+      :root {
+        --bg-color: #f4f1de; /* Off-white / Cream background */
+        --main-text-color: #000000;
+        --primary-accent: #eaff00; /* Vibrant Yellow */
+        --secondary-accent: #0057ff; /* Bright Blue */
+        --border-width: 3px;
+        --shadow-offset: 8px;
+        --border-radius: 4px;
+      }
 
-        body {
-            background-color: var(--bg-dominant);
-            color: var(--accent-dark);
-        }
+      html {
+        scroll-behavior: smooth;
+      }
 
-        .navbar,
-        .footer {
-            background-color: var(--accent-dark);
-        }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-color);
+        color: var(--main-text-color);
+        line-height: 1.6;
+        margin: 0;
+        padding: 2rem;
+      }
 
-        .text-accent-light {
-            color: var(--accent-light);
-        }
-        .border-accent-light {
-            border-color: var(--accent-light);
-        }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
 
-        .bg-secondary {
-            background-color: var(--bg-secondary);
+      /* --- Navigation --- */
+      nav {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        border-bottom: var(--border-width) solid var(--main-text-color);
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        background-color: var(--bg-color);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: var(--main-text-color);
+        font-weight: 700;
+        padding: 0.5rem 1rem;
+        border: var(--border-width) solid var(--main-text-color);
+        box-shadow: 4px 4px 0 var(--main-text-color);
+        background-color: #fff;
+        transition: all 0.2s ease-in-out;
+      }
+
+      nav a:hover {
+        background-color: var(--primary-accent);
+        box-shadow: 4px 4px 0 var(--secondary-accent);
+        transform: translate(-2px, -2px);
+      }
+
+      /* --- Main Layout Grid --- */
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        gap: 2rem;
+        align-items: start;
+      }
+
+      @media (max-width: 900px) {
+        .portfolio-grid {
+          grid-template-columns: 1fr;
         }
-        .border-accent-dark {
-            border-color: var(--accent-dark);
-        }
-        .hover\:border-accent-light:hover {
-            border-color: var(--accent-light);
-        }
-        .form-input {
-            background-color: #fff;
-            border: 2px solid var(--accent-light);
-            transition: all 0.3s;
-        }
-        .form-input:focus {
-            outline: none;
-            border-color: var(--accent-dark);
-            box-shadow: 0 0 0 3px rgba(65, 115, 124, 0.3);
-        }
-        .btn-submit {
-             background-color: var(--accent-light);
-             transition: background-color 0.3s;
-        }
-         .btn-submit:hover {
-             background-color: var(--accent-dark);
-         }
+      }
+
+      /* --- Sidebar (Aside) --- */
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .sidebar .card {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin: 0;
+        line-height: 1.1;
+      }
+
+      .header p {
+        font-size: 1.1rem;
+        margin: 0.5rem 0 0 0;
+        background-color: var(--primary-accent);
+        padding: 0.25rem 0.5rem;
+        display: inline-block;
+        border: var(--border-width) solid var(--main-text-color);
+      }
+
+      .profile-img {
+        display: block;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: var(--border-width) solid var(--main-text-color);
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0
+          var(--secondary-accent); /* Bayangan awal (biru) */
+        margin: 1.5rem auto;
+        transition: all 0.2s ease-in-out; /* Menambahkan transisi yang mulus */
+      }
+
+      .profile-img:hover {
+        transform: translate(-4px, -4px); /* Menggeser gambar ke kiri atas */
+        box-shadow: calc(var(--shadow-offset) * 1.5)
+          calc(var(--shadow-offset) * 1.5) 0 var(--primary-accent); /* Memperbesar bayangan & mengubah warna jadi kuning */
+      }
+
+      .contact-links a {
+        display: block;
+        margin-top: 0.5rem;
+        color: var(--main-text-color);
+        text-decoration: none;
+        font-weight: 700;
+        border-bottom: 2px dotted var(--main-text-color);
+        transition: background-color 0.2s;
+      }
+
+      .contact-links a:hover {
+        background-color: var(--secondary-accent);
+        color: white;
+      }
+
+      .cta-button {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 900;
+        color: #fff;
+        background-color: var(--secondary-accent);
+        padding: 0.75rem;
+        border: var(--border-width) solid var(--main-text-color);
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0
+          var(--main-text-color);
+        transition: all 0.2s ease-in-out;
+        margin-top: 1.5rem;
+      }
+
+      .cta-button:hover {
+        background-color: var(--primary-accent);
+        color: var(--main-text-color);
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0
+          var(--secondary-accent);
+        transform: translate(-4px, -4px);
+      }
+
+      /* --- Main Content & Projects --- */
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .card {
+        background-color: #ffffff;
+        border: var(--border-width) solid var(--main-text-color);
+        padding: 1.5rem;
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0
+          var(--main-text-color);
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        border-bottom: var(--border-width) solid var(--main-text-color);
+        padding-bottom: 0.5rem;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+      }
+
+      .project-image {
+        width: 100%;
+        height: 350px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border: var(--border-width) solid var(--main-text-color);
+        margin-bottom: 1.5rem;
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0
+          var(--secondary-accent);
+      }
+
+      .project-details h4 {
+        font-size: 1rem;
+        font-weight: 900;
+        margin: 1.2rem 0 0.5rem 0;
+      }
+
+      .project-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        color: var(--main-text-color);
+        text-decoration: none;
+        font-weight: 700;
+        border-bottom: 2px dashed var(--main-text-color);
+        transition: all 0.2s ease-in-out;
+      }
+
+      .project-link:hover {
+        background-color: var(--primary-accent);
+        border-bottom-style: solid;
+      }
+
+      .project-link svg {
+        width: 1em;
+        height: 1em;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .project-link:hover svg {
+        transform: translateX(4px);
+      }
+
+      .tech-stack,
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        align-items: center;
+        margin-top: 0.5rem;
+      }
+
+      .job,
+      .project,
+      .education-item {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px dashed #ccc;
+      }
+      .job:last-child,
+      .project:last-child,
+      .education-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .job-title,
+      .project-title,
+      .degree {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+      .company,
+      .project-source,
+      .institution {
+        font-style: italic;
+        margin-bottom: 0.5rem;
+      }
+      .date {
+        font-size: 0.9rem;
+        font-weight: 700;
+        background-color: var(--bg-color);
+        padding: 0.2rem 0.5rem;
+        border: 2px solid var(--main-text-color);
+        float: right;
+      }
+      ul {
+        padding-left: 20px;
+        margin-top: 0.5rem;
+      }
     </style>
-</head>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+      </nav>
 
-<body>
-    <header class="navbar shadow-lg sticky top-0 z-50 border-b-4 border-accent-light">
-        <nav class="container mx-auto px-6 py-4">
-            <ul class="flex items-center justify-evenly text-lg lg:text-xl text-white font-semibold">
+      <div class="portfolio-grid">
+        <aside class="sidebar">
+          <div class="header card">
+            <h1>Ahmad Indra Nurfauzi</h1>
+            <!-- <p>Aspiring Fullstack Engineer</p> -->
+            <img
+              src="./assets/profile-picture/pp.jpeg"
+              alt="Ahmad Indra Nurfauzi Profile Picture"
+              class="profile-img"
+            />
+          </div>
+
+          <div class="contact card">
+            <h2>Contact & Links</h2>
+            <div class="contact-links">
+              <p>(+62) 853 5211 1892</p>
+              <a href="mailto:ahmadindran@gmail.com">Email Me</a>
+              <a
+                href="https://www.linkedin.com/in/ahmad-indra-nurfauzi/"
+                target="_blank"
+                >LinkedIn Profile</a
+              >
+              <a href="https://github.com/IndraNurfa" target="_blank"
+                >GitHub Profile</a
+              >
+              <a href="#projects">View My Portfolio</a>
+            </div>
+            <a
+              href="./assets/cv/CV_ATS-Ahmad_Indra_Nurfauzi.pdf"
+              class="cta-button"
+              download
+              >DOWNLOAD MY CV</a
+            >
+          </div>
+
+          <div id="skills" class="card">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+              <img
+                src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                alt="JavaScript"
+              />
+              <img
+                src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
+                alt="TypeScript"
+              />
+              <img
+                src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"
+                alt="Go"
+              />
+              <img
+                src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white"
+                alt="Java"
+              />
+              <img
+                src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"
+                alt="PHP"
+              />
+              <img
+                src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
+                alt="Next.js"
+              />
+              <img
+                src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                alt="React"
+              />
+              <img
+                src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"
+                alt="NestJS"
+              />
+              <img
+                src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=black"
+                alt="Express.js"
+              />
+              <img
+                src="https://img.shields.io/badge/CodeIgniter-DD4814?style=for-the-badge&logo=codeigniter&logoColor=white"
+                alt="CodeIgniter"
+              />
+              <img
+                src="https://img.shields.io/badge/Gin-00ADD8?style=for-the-badge&logo=go&logoColor=white"
+                alt="Gin"
+              />
+              <img
+                src="https://img.shields.io/badge/Echo-00B9E8?style=for-the-badge&logo=go&logoColor=white"
+                alt="Echo"
+              />
+              <img
+                src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"
+                alt="MySQL"
+              />
+              <img
+                src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"
+                alt="PostgreSQL"
+              />
+              <img
+                src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"
+                alt="MongoDB"
+              />
+              <img
+                src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white"
+                alt="Kafka"
+              />
+              <img
+                src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
+                alt="Kubernetes"
+              />
+              <img
+                src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
+                alt="Docker"
+              />
+              <img
+                src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"
+                alt="Git"
+              />
+              <img
+                src="https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white"
+                alt="Arduino"
+              />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+          </div>
+        </aside>
+
+        <main class="main-content">
+          <section id="about" class="card">
+            <h2>About Me</h2>
+            <q>
+              I&rsquo;m a Technical Support Engineer turned backend-focused
+              developer with a strong foundation built from real-world
+              production experience. I enjoy designing and building scalable
+              systems using TypeScript, Golang, PostgreSQL, and MongoDB. My
+              experience troubleshooting live issues taught me how systems
+              actually fail—and how to make them reliable, maintainable, and
+              fast. I value clear communication, clean architecture, and
+              continuous improvement. When I&rsquo;m not coding, I like
+              exploring new tech, writing, and building toy projects just for
+              fun&hellip;
+            </q>
+          </section>
+
+          <section id="education" class="card">
+            <h2>Education</h2>
+            <div class="education-item">
+              <span class="date">Feb 2025 - Aug 2025</span>
+              <div class="degree">Full Stack Software Engineering</div>
+              <div class="institution">RevoU</div>
+              <p>
+                Ranked 2nd in the Top 4 Best Projects of the Fullstack
+                Engineering Program. <br />
+                Learned and applied JavaScript, TypeScript, Next.js, NestJS, and
+                PostgreSQL for full-stack development.
+              </p>
+            </div>
+            <div class="education-item">
+              <span class="date">Sep 2022 - Sep 2024</span>
+              <div class="degree">Bachelor of Informatics</div>
+              <div class="institution">Telkom University</div>
+            </div>
+            <div class="education-item">
+              <span class="date">Aug 2019 - Aug 2024</span>
+              <div class="degree">
+                Associate's Degree in Application Software Engineering
+              </div>
+              <div class="institution">Telkom University</div>
+            </div>
+          </section>
+
+          <section id="experience" class="card">
+            <h2>Working Experiences</h2>
+            <div class="job">
+              <span class="date">May 2024 - Present</span>
+              <div class="job-title">Technical Support Engineer</div>
+              <div class="company">Moladin</div>
+              <ul>
                 <li>
-                    <a href="#home" class="relative py-2 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">Home</a>
+                  Resolved 99% of reported production issues with an average
+                  resolution time of 10 minutes.
                 </li>
                 <li>
-                    <a href="#about-me" class="relative py-2 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">About Me</a>
+                  Implemented critical data maintenance tasks and managed
+                  message queue processes.
                 </li>
                 <li>
-                    <a href="#my-project" class="relative py-2 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">Project</a>
+                  Achieved a zero reoccurrence rate for incidents through
+                  precise data validation.
+                </li>
+              </ul>
+            </div>
+            <div class="job">
+              <span class="date">Jun 2023 - Dec 2023</span>
+              <div class="job-title">Full Stack Engineering Apprenticeship</div>
+              <div class="company">GoTo Impact Foundation</div>
+              <ul>
+                <li>
+                  Built a fullstack affiliate platform using the MERN stack with
+                  session-based authentication.
                 </li>
                 <li>
-                    <a href="#contact-me" class="relative py-2 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">Contact Me</a>
+                  Developed InfoBencana, a disaster awareness platform with
+                  Node.js, Express, and MongoDB.
                 </li>
-            </ul>
-        </nav>
-    </header>
+              </ul>
+            </div>
+            <div class="job">
+              <span class="date">Jun 2023 - Jul 2023</span>
+              <div class="job-title">Back End Developer Intern</div>
+              <div class="company">Core Initiative</div>
+              <ul>
+                <li>
+                  Developed a self-payroll system backend using Golang (Echo)
+                  and Clean Architecture.
+                </li>
+                <li>
+                  Implemented salary withdrawal and company balance features.
+                </li>
+              </ul>
+            </div>
+          </section>
 
-    <main class="container mx-auto mt-20 mb-24">
-        <section id="home" class="flex flex-col md:flex-row items-center p-5 gap-12 mx-auto max-w-6xl">
-            <div class="flex-1 text-center md:text-left">
-                <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl antialiased">
-                    AHMAD INDRA NURFAUZI</h1>
-                <p class="font-semibold text-2xl md:text-3xl text-accent-light mt-4 antialiased">
-                    Full-Stack Engineer | Problem Solver | System Optimizer
+          <section id="projects" class="card">
+            <h2>Project Experiences</h2>
+            <div class="project">
+              <!-- <img
+                class="project-image"
+                src="./assets/profile-picture/hein-arnold.jpeg"
+                alt="Lobby Padel Project Screenshot"
+              /> -->
+              <iframe
+                class="project-image"
+                src="https://final-project-fe-indra-nurfa.vercel.app/"
+              ></iframe>
+              <span class="date">Jul 2025 - Aug 2025</span>
+              <div class="project-title">Lobby Padel</div>
+              <div class="project-source">RevoU Final Project</div>
+              <div class="project-details">
+                <h4>Background</h4>
+                <p>
+                  A solo project to develop a comprehensive booking management
+                  application for padel courts, addressing the need for a
+                  streamlined scheduling system for players and administrators.
                 </p>
-            </div>
-            <div
-                class="overflow-hidden rounded-full border-4 border-accent-dark shadow-lg hover:shadow-2xl hover:border-accent-light transition-all duration-300">
-                <img src="assets/profile-picture/hanni.png" alt="profile picture"
-                    class="w-48 md:w-64 transition-transform duration-300 hover:scale-110">
-            </div>
-        </section>
-
-        <section id="about-me" class="p-8 mt-20 max-w-5xl mx-auto">
-            <div class="text-center">
-                <p class="font-medium text-lg leading-relaxed">
-                    I am a Full-Stack Engineer with expertise in application development, programming, and technical
-                    support.
-                    Experienced in Java, JavaScript, TypeScript, Golang, and databases like MySQL, PostgreSQL, and
-                    MongoDB.
-                    I focus on creating efficient, scalable, and user-friendly technology solutions while optimizing
-                    system
-                    performance.
+                <h4>Responsibilities</h4>
+                <p>
+                  Acted as the sole Full-Stack Developer, responsible for the
+                  entire development lifecycle from database design and API
+                  creation to front-end implementation and deployment.
                 </p>
-
-                <div class="flex justify-center gap-12 mt-10">
-                    <a href="https://www.linkedin.com/in/ahmad-indra-nurfauzi/" target="_blank"
-                        rel="noopener noreferrer" class="text-accent-light hover:text-accent-dark transition-colors duration-300">
-                        <i class="fab fa-linkedin fa-3x"></i>
-                    </a>
-                    <a href="https://github.com/IndraNurfa" target="_blank" rel="noopener noreferrer" class="text-accent-light hover:text-accent-dark transition-colors duration-300">
-                        <i class="fab fa-github fa-3x"></i>
-                    </a>
-                     <a href="mailto:ahmadindran@gmail.com" class="text-accent-light hover:text-accent-dark transition-colors duration-300">
-                        <i class="fas fa-envelope fa-3x"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <hr class="h-px my-20 bg-gray-300 border-0 max-w-4xl mx-auto">
-
-        <section id="experience" class="p-8 max-w-7xl mx-auto">
-            <h2 class="text-4xl font-bold mb-12 text-center">Experience</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold">Technical Support Engineer - Moladin</h3>
-                    <p class="font-normal text-accent-light mt-2">May 2024 - Present</p>
-                    <ul class="list-disc list-inside mt-4 pl-4 space-y-2 font-medium">
-                        <li>Troubleshoot and diagnose technical issues faced by agents and dealers.</li>
-                        <li>Provide technical solutions ensuring smooth system operations.</li>
-                        <li>Deliver timely and effective resolutions to tech-related problems.</li>
-                    </ul>
-                </div>
-
-                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold">FullStack Engineer - GoTo Impact</h3>
-                    <p class="font-normal text-accent-light mt-2">June 2023 - Dec 2023</p>
-                    <ul class="list-disc list-inside mt-4 pl-4 space-y-2 font-medium">
-                        <li>Developed high-performance web applications using MERN stack.</li>
-                        <li>Built a real-time disaster information app with backend integration.</li>
-                        <li>Maintained documentation to ensure workflow clarity.</li>
-                    </ul>
-                </div>
-
-                <div class="bg-secondary p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold">Software Engineer Intern - Tech Startup</h3>
-                    <p class="font-normal text-accent-light mt-2">Jan 2023 - May 2023</p>
-                    <ul class="list-disc list-inside mt-4 pl-4 space-y-2 font-medium">
-                        <li>Assisted in developing new features for a web application.</li>
-                        <li>Wrote unit tests to ensure code quality and reliability.</li>
-                        <li>Participated in code reviews and agile team meetings.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <hr class="h-px my-20 bg-gray-300 border-0 max-w-4xl mx-auto">
-
-        <section id="my-project" class="p-8 max-w-7xl mx-auto">
-            <h2 class="text-4xl font-bold mb-12 text-center">Projects</h2>
-             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Project 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="assets/project/infobencana.png" alt="InfoBencana" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold">InfoBencana</h3>
-                        <p class="mt-2 text-accent-light">A platform for timely and integrated natural disaster information to address public access issues.</p>
-                        <a href="#" class="inline-block mt-4 text-accent-dark font-semibold hover:underline">View Project &rarr;</a>
-                    </div>
-                </div>
-                <!-- Project 2 (Mock) -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="assets/project/infobencana.png" alt="Mock Project 2" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold">E-commerce Platform</h3>
-                        <p class="mt-2 text-accent-light">A full-featured e-commerce website with a custom CMS, built with Node.js, Express, and React.</p>
-                         <a href="#" class="inline-block mt-4 text-accent-dark font-semibold hover:underline">View Project &rarr;</a>
-                    </div>
-                </div>
-                <!-- Project 3 (Mock) -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                     <img src="assets/project/infobencana.png" alt="Mock Project 3" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold">Personal Blog</h3>
-                        <p class="mt-2 text-accent-light">A personal blog platform with markdown support, built with Next.js and Tailwind CSS.</p>
-                         <a href="#" class="inline-block mt-4 text-accent-dark font-semibold hover:underline">View Project &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact-me" class="p-8 mt-20 max-w-lg mx-auto">
-            <div class="w-full bg-secondary shadow-lg rounded-lg border-2 border-accent-dark p-8">
-                <h2 class="text-3xl font-bold mb-4 text-center">Contact Me</h2>
-                <p class="text-center font-medium text-accent-light mb-8">
-                    I'd love to hear from you! Feel free to drop me a message.
+                <h4>Output</h4>
+                <p>
+                  A fully functional web app featuring real-time court
+                  availability, secure user booking, and an admin dashboard for
+                  management. Deployed successfully on Vercel and Railway.
                 </p>
-
-                <form action="https://formspree.io/f/your_form_id" method="POST" class="space-y-6">
-                    <div>
-                        <label for="name" class="block font-semibold mb-2">Name</label>
-                        <input type="text" id="name" name="name"
-                            class="w-full px-5 py-3 text-base rounded-lg form-input">
-                    </div>
-
-                    <div>
-                        <label for="email" class="block font-semibold mb-2">Email</label>
-                        <input type="email" id="email" name="email"
-                            class="w-full px-5 py-3 text-base rounded-lg form-input">
-                    </div>
-
-                    <div>
-                        <label for="message" class="block font-semibold mb-2">Message</label>
-                        <textarea id="message" name="message" rows="5"
-                            class="w-full px-5 py-3 text-base rounded-lg form-input"></textarea>
-                    </div>
-
-                    <button type="submit"
-                        class="w-full text-white font-semibold py-3 rounded-lg shadow-md hover:shadow-lg btn-submit">Send
-                        Message</button>
-                </form>
+                <h4>Tech Stack</h4>
+                <div class="tech-stack">
+                  <img
+                    src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
+                    alt="Next.js"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"
+                    alt="Vercel"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                    alt="Tailwind CSS"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/shadcnui-000000?style=for-the-badge&logo=shadcnui&logoColor=white"
+                    alt="Shadcn/UI"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"
+                    alt="NestJS"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"
+                    alt="PostgreSQL"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white"
+                    alt="Prisma"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white"
+                    alt="Supabase"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Railway-0B0D12?style=for-the-badge&logo=railway&logoColor=white"
+                    alt="Railway"
+                  />
+                </div>
+                <a
+                  href="https://final-project-fe-indra-nurfa.vercel.app/"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <span>View Project &#8599;</span>
+                </a>
+                <a
+                  href="https://github.com/IndraNurfa/final-project-fe-IndraNurfa"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <span>FE Repositories &#8599;</span>
+                </a>
+                <a
+                  href="https://github.com/IndraNurfa/final-project-be-IndraNurfa"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <span>BE Repositories &#8599;</span>
+                </a>
+              </div>
             </div>
-        </section>
-    </main>
-
-    <footer class="footer text-white py-10">
-        <section class="container mx-auto px-8 grid gap-6 text-center md:grid-cols-3 items-center">
-            <div class="md:col-span-2 text-center md:text-left">
-                <h2 class="text-lg font-semibold">Ahmad Indra Nurfauzi | Full-Stack Engineer</h2>
-                <p class="text-sm font-light mt-1">&copy; <time datetime="2025">2025</time> All rights reserved.
+            <div class="project">
+              <img
+                class="project-image"
+                src="./assets/project/infobencana.png"
+                alt="Lobby Padel Project Screenshot"
+              />
+              <span class="date">Sep 2023 - Dec 2023</span>
+              <div class="project-title">InfoBencana</div>
+              <div class="project-source">GoTo Impact Foundation</div>
+              <div class="project-details">
+                <h4>Background</h4>
+                <p>
+                  A web platform designed to improve public access to accurate
+                  and timely emergency information by delivering real-time
+                  disaster updates from official sources.
                 </p>
+                <h4>Responsibilities</h4>
+                <p>
+                  Collaborated in a team to build the backend services,
+                  integrate with the Google Maps API for geolocation
+                  visualization, and ensure secure data handling with JWT
+                  authentication.
+                </p>
+                <h4>Output</h4>
+                <p>
+                  A responsive and user-friendly disaster awareness platform
+                  that visualizes disaster locations on a map and provides
+                  crucial, up-to-date information to the public.
+                </p>
+                <h4>Tech Stack</h4>
+                <div class="tech-stack">
+                  <img
+                    src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"
+                    alt="MongoDB"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Express.js-FFEA00?style=for-the-badge&logo=express&logoColor=black"
+                    alt="Express.js"
+                  /><img
+                    src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                    alt="React"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"
+                    alt="Node.js"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                    alt="Tailwind CSS"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/shadcnui-000000?style=for-the-badge&logo=shadcnui&logoColor=white"
+                    alt="Shadcn/UI"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/googlecloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"
+                    alt="GCP"
+                  />
+                </div>
+                <a
+                  href="https://github.com/infobencana/infobencana-project"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <span>View Project &#8599;</span>
+                </a>
+              </div>
             </div>
-
-            <nav class="justify-self-center md:justify-self-end">
-                 <ul class="flex space-x-6 text-lg">
-                    <li><a href="https://github.com/IndraNurfa" target="_blank" rel="noopener noreferrer"
-                            class="hover:text-gray-300 transition-colors"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/ahmad-indra-nurfauzi/" target="_blank"
-                            rel="noopener noreferrer" class="hover:text-gray-300 transition-colors"><i class="fab fa-linkedin"></i>
-                            </a></li>
-                    <li><a href="mailto:ahmadindran@gmail.com" class="hover:text-gray-300 transition-colors"><i
-                                class="fas fa-envelope"></i></a></li>
-                </ul>
-            </nav>
-        </section>
-    </footer>
-</body>
-
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
 </html>
